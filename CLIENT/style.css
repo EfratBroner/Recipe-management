@@ -1,0 +1,115 @@
+body {
+    font-family: 'Segoe UI', Arial;
+    direction: rtl;
+    margin: 0;
+    background: #eef5ea;
+}
+
+.main-header {
+    background: linear-gradient(135deg, #4CAF50, #3d8b40);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.block {
+    background: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 14px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+.filter-row {
+    display: flex;
+    gap: 10px;
+}
+
+.main-btn {
+    background: #4CAF50;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.nice-input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background: #fafafa;
+}
+
+.save-btn {
+    background: #4CAF50;
+    color: white;
+    padding: 14px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.cancel-btn {
+    background: #999;
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.recipe-card {
+    background: white;
+    padding: 15px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.recipe-details {
+    display: none;
+    margin-top: 10px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.delete-btn {
+    background: #d9534f;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background: #0275d8;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+/* חלון עריכה */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background: white;
+    width: 350px;
+    margin: 80px auto;
+    padding: 20px;
+    border-radius: 12px;
+}

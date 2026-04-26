@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>השף הדיגיטלי</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="main-header">
+    <h1>השף הדיגיטלי</h1>
+    <p>כל המתכונים שלך במקום אחד</p>
+</header>
+
+<section class="block">
+    <div class="filter-row">
+        <button id="show-all-btn" class="main-btn">הצג את כל המתכונים</button>
+
+        <select id="category-filter" class="nice-input">
+            <option value="all">סינון לפי קטגוריה</option>
+        </select>
+    </div>
+
+    <ul id="recipes-list"></ul>
+</section>
+
+<section class="block">
+    <h2>הוסף מתכון חדש</h2>
+
+    <div class="form-group">
+        <label>שם המתכון</label>
+        <input id="recipe-name" class="nice-input">
+    </div>
+
+    <div class="form-group">
+        <label>קטגוריה</label>
+        <input id="recipe-category" class="nice-input">
+    </div>
+
+    <div class="form-group">
+        <label>רכיבים</label>
+        <textarea id="recipe-ingredients" class="nice-input"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label>הוראות הכנה</label>
+        <textarea id="recipe-instructions" class="nice-input"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label>זמן הכנה (דקות)</label>
+        <input id="recipe-prep-time" type="number" class="nice-input">
+    </div>
+
+    <button id="add-recipe-btn" class="save-btn">שמור מתכון</button>
+    <p id="add-recipe-message"></p>
+</section>
+
+<section class="block">
+    <h2>שאל את השף (AI)</h2>
+    <input id="ai-question" class="nice-input">
+    <button id="ask-ai-btn" class="main-btn">שאל</button>
+    <p id="ai-answer"></p>
+</section>
+
+<!-- חלון עריכה -->
+<div id="edit-modal" class="modal">
+    <div class="modal-content">
+        <h3>עריכת מתכון</h3>
+
+        <input id="edit-id" type="hidden">
+
+        <label>שם</label>
+        <input id="edit-name" class="nice-input">
+
+        <label>קטגוריה</label>
+        <input id="edit-category" class="nice-input">
+
+        <label>רכיבים</label>
+        <textarea id="edit-ingredients" class="nice-input"></textarea>
+
+        <label>הוראות</label>
+        <textarea id="edit-instructions" class="nice-input"></textarea>
+
+        <label>זמן הכנה</label>
+        <input id="edit-prep" type="number" class="nice-input">
+
+        <button id="save-edit-btn" class="save-btn">שמור שינויים</button>
+        <button id="close-edit-btn" class="cancel-btn">סגור</button>
+    </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
